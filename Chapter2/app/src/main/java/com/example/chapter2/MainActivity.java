@@ -1,5 +1,6 @@
 package com.example.chapter2;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -52,30 +53,40 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String country = (String) spinner.getSelectedItem();
+                String capitalStr = new String();
                 Log.d("country",country);
                 switch (country){
                     case "Bangladesh":
-                        capital.setText("Dhaka");
+                        //capital.setText("Dhaka");
+                        capitalStr="Dhaka";
                         break;
                     case "India":
-                        capital.setText("New Delhi");
+                        //capital.setText("New Delhi");
+                        capitalStr="New Delhi";
                         break;
                     case "Pakistan":
-                        capital.setText("Islamabad");
+                        //capital.setText("Islamabad");
+                        capitalStr="Islamabad";
                         break;
                     case "Srilanka":
-                        capital.setText("Colombo");
+                        //capital.setText("Colombo");
+                        capitalStr="Colombo";
                         break;
                     case "Nepal":
-                        capital.setText("Kathmundu");
+                        //capital.setText("Kathmundu");
+                        capitalStr="Kathmundu";
                         break;
                     case "Bhutan":
-                        capital.setText("Thimpu");
+                        //capital.setText("Thimpu");
+                        capitalStr="Thimpu";
                         break;
                     default:
                         capital.setText("Not Found");
 
                 }
+
+                Intent myintent=new Intent(MainActivity.this, Main2Activity.class).putExtra("capital", capitalStr);
+                startActivity(myintent);
 
             }
         });
