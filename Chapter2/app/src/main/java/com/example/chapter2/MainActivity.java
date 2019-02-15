@@ -85,7 +85,11 @@ public class MainActivity extends AppCompatActivity {
 
                 }
 
-                Intent myintent=new Intent(MainActivity.this, Main2Activity.class).putExtra("capital", capitalStr);
+                //Intent myintent=new Intent(MainActivity.this, Main2Activity.class).putExtra("capital", capitalStr);
+                Intent myintent=new Intent(Intent.ACTION_SEND);
+                myintent.setType("text/plain");
+                myintent.putExtra(Intent.EXTRA_TEXT, capitalStr);
+
                 startActivity(myintent);
 
             }
