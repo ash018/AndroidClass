@@ -8,9 +8,13 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.ToggleButton;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +22,9 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     private Button button;
-    private TextView capital;
+    private TextView capital,glT,sllT;
+    private ToggleButton tgB;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +35,9 @@ public class MainActivity extends AppCompatActivity {
         final Spinner spinner = (Spinner) findViewById(R.id.spinner);
         button = (Button) findViewById(R.id.btn);
         capital = (TextView) findViewById(R.id.capital);
+        glT = (TextView) findViewById(R.id.glT);
+        sllT = (TextView) findViewById(R.id.slT);
+        tgB = (ToggleButton) findViewById(R.id.toggle_button);
 
         //spinner.setOnItemClickListener(AdapterView.OnItemClickListener);
 
@@ -96,6 +105,8 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+
+
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         // On selecting a spinner item
         String item = parent.getItemAtPosition(position).toString();
@@ -105,5 +116,75 @@ public class MainActivity extends AppCompatActivity {
     }
     public void onNothingSelected(AdapterView<?> arg0) {
         // TODO Auto-generated method stub
+    }
+
+    public void onToggleButtonClicked(View view) {
+        // Get the state of the toggle button.
+        boolean on = ((ToggleButton) view).isChecked();
+        if (on) {
+            // On
+            glT.setText("Grid Layout Toggle Button On");
+
+        } else {
+            // Off
+            glT.setText("Grid Layout Toggle Button off");
+        }
+    }
+
+    public void onCheckboxClicked(View view) {
+        // Has the checkbox that was clicked been checked?
+        boolean checked = ((CheckBox) view).isChecked();
+
+        // Retrieve which checkbox was clicked
+        switch(view.getId()) {
+            case R.id.checkbox_milk:
+                if (checked) {
+                    // Milky coffee
+                    sllT.setText("Milk Selected");
+                }
+                else {
+                    // Black as the midnight sky on a moonless night
+                    sllT.setText("Milk Unselected");
+                }
+                break;
+            case R.id.checkbox_sugar:
+                if (checked) {
+                    // Sweet
+                    sllT.setText("Sugar Selected");
+                }
+                 else{
+                    sllT.setText("Sugar UnSelected");
+                 }
+                // Keep it bitter
+                break;
+        }
+    }
+
+    public void onRadioButtonClicked(View view) {
+        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radio_group);
+        int id = radioGroup.getCheckedRadioButtonId();
+        switch(id) {
+            case R.id.radio_cavemen:
+                // Cavemen win
+                sllT.setText("Caveman Clicked");
+                break;
+            case R.id.radio_astronauts:
+                // Astronauts win
+                sllT.setText("Astronauts Clicked");
+                break;
+        }
+    }
+
+    public void onSwitchClicked(View view) {
+        // Is the switch on?
+        boolean on = ((Switch) view).isChecked();
+
+        if (on) {
+            // On
+            glT.setText("Switch On");
+        } else {
+            // Off
+            glT.setText("Switch Off");
+        }
     }
 }

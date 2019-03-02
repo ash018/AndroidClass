@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Works To Be Done</string>
+    <string name="app_name">To Do List</string>
+    <string name="inputFieldText">New To-Do Item</string>
+    <string name="confirmation_message">Task Added</string>
+    <string name="add_new">Add New Item</string>
+    <string name="remove">Remove Item</string>
+    <string name="cancel">Cancel</string>
+    <string name="menu_item">Menu Item 1 :)</string>
+
+</resources>

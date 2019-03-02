@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Chapter2</string>
     <string name="spinner_title">Select Country</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="milk">Milk</string>
+    <string name="sugar">Sugar</string>
+    <string name="cavemen">Cavemen</string>
+    <string name="astronauts">Astronauts</string>
 </resources>

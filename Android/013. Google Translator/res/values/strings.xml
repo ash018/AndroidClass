@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Google Translator</string>
+    <string name="from_text">From:</string>
+    <string name="original_text_hint">Your Text Here</string>
+    <string name="to_text">To:</string>
+    <string name="back_text">And back again:</string>
+    <string name ="empty"> </string>
+    <string name="translating">Translating...</string>
+    <string name="translate_error">Translation Interrupted</string>
+
+</resources>

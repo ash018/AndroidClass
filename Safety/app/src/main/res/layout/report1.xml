@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:text="Your Name"
+        android:id="@+id/textViewName" />
+
+    <EditText
+        android:layout_width="394dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextName" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:textSize="20dp"
+        android:text="Address"
+        android:textColor="@android:color/black"
+        android:id="@+id/textViewAddress" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextAddress" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:textSize="20dp"
+        android:text="Contact No"
+        android:textColor="@android:color/black"
+        android:id="@+id/textViewContact" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextContact" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:textSize="20dp"
+        android:text="Date"
+        android:textColor="@android:color/black"
+        android:id="@+id/textViewDate" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/editTextDate" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:textSize="20dp"
+        android:text="Report"
+        android:textColor="@android:color/black"
+        android:id="@+id/textViewReport" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:id="@+id/editTextReport" />
+    <Button
+        android:layout_width="190dp"
+        android:layout_height="59dp"
+        android:text="Submit"
+        android:layout_gravity="right"
+        android:id="@+id/buttonSubmit"/>
+
+
+
+
+
+</LinearLayout>

@@ -6,6 +6,17 @@
     android:layout_height="wrap_content">
 
     <TextView
+        android:id="@+id/llT"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:text="Linear Layout"
+        android:textSize="15dp"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dip"
@@ -34,4 +45,150 @@
         android:layout_marginTop="10dip"
         android:layout_marginBottom="5dp"/>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/capital2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Relative Layout"
+            android:textSize="15dp"
+            android:layout_marginTop="2dip"
+            android:layout_marginBottom="2dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click me"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/glT"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:text="Grid Layout"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:textSize="15dp"
+        android:layout_marginTop="2dip"
+        android:layout_marginBottom="2dp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rowCount="2"
+        android:columnCount="2">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="Hello" />
+        <ToggleButton
+            android:id="@+id/toggle_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="On"
+            android:textOff="Off"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:onClick="onToggleButtonClicked"
+        />
+
+        <Switch
+            android:id="@+id/switch_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:onClick="onSwitchClicked"
+            android:textOn="@string/on"
+            android:textOff="@string/off" />
+
+        <ImageView
+            android:src="@drawable/ic_launcher_background"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:textSize="14dip"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"/>
+
+    </GridLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/slT"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:text="Scroll View"
+                android:textSize="15dp"
+                android:layout_marginTop="2dip"
+                android:layout_marginBottom="2dp"/>
+
+            <CheckBox android:id="@+id/checkbox_milk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/milk"
+                android:onClick="onCheckboxClicked"/>
+            <CheckBox android:id="@+id/checkbox_sugar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sugar"
+                android:onClick="onCheckboxClicked"/>
+
+            <RadioGroup android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton android:id="@+id/radio_cavemen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cavemen"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/radio_astronauts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/astronauts"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
 </LinearLayout>
+
+
+

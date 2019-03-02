@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="app/build/generated/source/buildConfig/androidTest/debug"/>
+	<classpathentry kind="src" path="app/build/generated/source/buildConfig/debug"/>
+	<classpathentry kind="src" path="app/build/generated/source/r/debug"/>
+	<classpathentry kind="src" path="app/src/androidTest/java"/>
+	<classpathentry kind="src" path="app/src/main/java"/>
+	<classpathentry kind="lib" path="app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.0.0-alpha1/jars/classes.jar"/>
+	<classpathentry kind="lib" path="app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0-alpha1/jars/classes.jar"/>
+	<classpathentry kind="lib" path="app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0-alpha1/jars/classes.jar"/>
+	<classpathentry kind="lib" path="app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0-alpha1/jars/libs/internal_impl-24.0.0-alpha1.jar"/>
+	<classpathentry kind="lib" path="app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0-alpha1/jars/classes.jar"/>
+	<classpathentry kind="lib" path="app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/jars/classes.jar"/>
+	<classpathentry kind="lib" path="app/build/intermediates/pre-dexed/debug/bolts-applinks-1.4.0-f1d700345378b01022b43721ac037fbbbe653dfb.jar"/>
+	<classpathentry kind="lib" path="app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0-6b079b66a1c4f87fa14efce9a191d6227552a4b1.jar"/>
+	<classpathentry kind="lib" path="app/build/intermediates/pre-dexed/debug/classes-0d1e3e23833db3010bdc595dd5fa18b9fcd4c983.jar"/>
+	<classpathentry kind="lib" path="app/build/intermediates/pre-dexed/debug/classes-39a2a3c97f3a184b11c02ff3d9d949bea4456b75.jar"/>
+	<classpathentry kind="lib" path="app/build/intermediates/pre-dexed/debug/classes-59e806d3bd54dab0a450d238dfebab257eaaf9d7.jar"/>
+	<classpathentry kind="lib" path="app/build/intermediates/pre-dexed/debug/classes-99d5ca7f033316cb35026eb00fbe49f539f4da6d.jar"/>
+	<classpathentry kind="lib" path="app/build/intermediates/pre-dexed/debug/classes-dcbcf585a1bff103cda2386a8dd739ad0600e4f9.jar"/>
+	<classpathentry kind="lib" path="app/build/intermediates/pre-dexed/debug/internal_impl-24.0.0-alpha1-ec055fdf33d57c3d72db297d9fa161082b02e76c.jar"/>
+	<classpathentry kind="lib" path="app/build/intermediates/pre-dexed/debug/parse-android-1.13.0-bb4ba9e3b3f26ca53140286b40067ecc1e6654f7.jar"/>
+	<classpathentry kind="lib" path="app/build/intermediates/pre-dexed/debug/support-annotations-24.0.0-alpha1-e46e7f08d60aa4be57baa2c744786a72e6790907.jar"/>
+	<classpathentry kind="lib" path="gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="app/build/intermediates/classes/debug"/>
+</classpath>
